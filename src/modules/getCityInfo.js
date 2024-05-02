@@ -1,4 +1,4 @@
-import { getWeatherFromAPI } from "./getWeatherFromAPI";
+import getWeatherFromAPI from "./getWeatherFromAPI";
 
 const getCityInfo = async city => {
   const data = await getWeatherFromAPI(city);
