@@ -1,7 +1,7 @@
 import getWeatherFromAPI from "./getWeatherFromAPI";
 
 // This function is used to access the API forecast hourly
-// It provides a shortcut
+// It provides a shortcut to the data location
 
 const accessToForecastHour = (data, hour) => ({
   state: data.forecast.forecastday[0].hour[hour].condition.text,

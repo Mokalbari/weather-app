@@ -1,5 +1,8 @@
 import getWeatherFromAPI from "./getWeatherFromAPI";
 
+// This function gets the weather from the API
+// Then process the main info about the user city location
+
 const getCityInfo = async city => {
   const data = await getWeatherFromAPI(city);
   return {

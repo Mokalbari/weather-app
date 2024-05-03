@@ -1,6 +1,7 @@
 import "./index.scss";
 import getCityInfo from "./modules/getCityInfo";
 import getHourlyInfo from "./modules/getHourlyInfo";
+import createDomElement from "./modules/createDomElement";
 
 // Stocker la donnée validée sous formulaire
 // Utiliser la donnée stockée pour fetch météo ville
