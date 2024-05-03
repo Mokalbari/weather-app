@@ -1,4 +1,5 @@
 import getWeatherFromAPI from "./getWeatherFromAPI";
+import config from "../config";
 
 // This function is used to access the API forecast hourly
 // It provides a shortcut to the data location
@@ -10,7 +11,7 @@ const accessToForecastHour = (data, hour) => ({
   rain: data.forecast.forecastday[0].hour[hour].precip_mm
 });
 
-const getHourlyInfo = async (city = "Toulouse") => {
+const getHourlyInfo = async (city = config.defaultCity) => {
   const data = await getWeatherFromAPI(city);
   const hourlyInfo = {};
   for (let h = 0; h < 24; h += 2) {
