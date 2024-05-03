@@ -11,8 +11,7 @@ const getWeatherIcon = async (city = config.defaultCity) => {
     const secureIconUrl = `https:${iconUrl}`;
     return secureIconUrl;
   } catch (error) {
-    console.error("Failed to fetch weather data:", error);
-    return null;
+    throw new Error("Failed to fetch weather icon:", error);
   }
 };
 
