@@ -1,0 +1,4 @@
+.hour {
+  @include grid-center;
+  grid-auto-flow: column;
+}

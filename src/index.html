@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather-App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rosarivo:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="content">
@@ -11,15 +21,18 @@
         <h1 class="city__name">Toulouse</h1>
         <p class="city__time">12:00</p>
         <div class="city__form">
-          <form action="#" method="post"><input type="text" /></form>
+          <form action="#" method="post">
+            <input type="text" placeholder="Search a city..." />
+            <i class="bx bx-search-alt-2 bx-s"></i>
+          </form>
+        </div>
 
-          <div class="city__informations">
-            <p class="city__weatherState">Partly Cloudy</p>
-            <p class="city__temperature">30°C</p>
-            <img class="city__weatherIcon" src="" alt="" />
-            <p class="city__humidity">Humidity: 75°</p>
-            <p class="city__rain">Rain: 0.02mm</p>
-          </div>
+        <div class="city__informations">
+          <p class="city__weatherState">Partly Cloudy</p>
+          <p class="city__temperature">30°C</p>
+          <img class="city__weatherIcon" src="" alt="" />
+          <p class="city__humidity">Humidity: 75°</p>
+          <p class="city__rain">Rain: 0.02mm</p>
         </div>
       </div>
       <div class="illustration">

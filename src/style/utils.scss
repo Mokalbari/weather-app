@@ -1,0 +1,83 @@
+// Colors
+$clr-acc-600: rgb(41, 128, 185);
+$clr-acc-300: rgb(109, 213, 250);
+
+$clr-acc-red: rgb(244, 67, 54);
+$clr-acc-org: rgb(240, 121, 115);
+$clr-acc-grn: rgb(69, 160, 73);
+
+$clr-ntrl-900: rgb(15, 23, 42);
+$clr-ntrl-600: rgb(71, 85, 105);
+$clr-ntrl-400: rgb(148, 163, 184);
+$clr-ntrl-200: rgb(226, 232, 240);
+$clr-ntrl-100: rgb(241, 245, 249);
+$clr-ntrl-050: rgb(248, 250, 252);
+
+// Size
+$s-050: 0.5rem; //8px
+$s-075: 0.75rem; //12px
+$s-087: 0.875rem; //14px
+$s-100: 1rem; //16px
+$s-125: 1.25rem; // 20px
+$s-150: 1.5rem; // 24px
+$s-200: 2rem; // 32px
+$s-250: 2.5rem; // 40px
+$s-300: 3rem; // 48px
+$s-350: 3.5rem; // 56px
+$s-500: 5rem; // 80px
+
+// Font styles
+$ff-h: "Montserrat", sans-serif;
+$ff-b: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Font weight
+$fw-t: 300;
+$fw-r: 400;
+$fw-s: 500;
+$fw-b: 600;
+
+// Utility mixins
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex($direction) {
+  display: flex;
+  flex-flow: $direction;
+}
+
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
+
+@mixin round-border {
+  border-radius: $s-125;
+}
+
+@mixin hover-effect {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transform: translateX(2px);
+  transition: transform 200ms ease-in-out;
+}
+
+@mixin click-effect {
+  transform: translateX(-2px);
+  transition: transform 100ms ease-in;
+  color: $clr-acc-600;
+}
+
+@mixin default-margin {
+  margin-bottom: $s-200;
+}
+
+@mixin default-padding {
+  padding: $s-200;
+}
+
+@mixin box-shadow {
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}

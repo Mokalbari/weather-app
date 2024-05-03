@@ -1,0 +1,32 @@
+.city {
+  @include default-padding;
+
+  &__name {
+    font-family: $ff-h;
+    font-size: $s-300;
+    font-weight: 600;
+    margin-bottom: $s-100;
+  }
+
+  &__time {
+    font-family: $ff-h;
+    font-size: $s-200;
+    margin-bottom: $s-100;
+  }
+
+  &__form {
+    @include flex(row);
+    input {
+      font-family: $ff-b;
+      border: 1px solid $clr-ntrl-600;
+      border-radius: $s-075;
+      padding: 0.3rem;
+    }
+
+    i:hover {
+      @include hover-effect;
+    }
+
+    margin-bottom: $s-500;
+  }
+}
