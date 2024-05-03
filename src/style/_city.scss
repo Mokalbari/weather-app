@@ -4,7 +4,13 @@
   &__name {
     font-family: $ff-h;
     font-size: $s-300;
-    font-weight: 600;
+    font-weight: 500;
+  }
+
+  &__country {
+    font-family: $ff-h;
+    font-size: $s-200;
+    font-weight: 400;
     margin-bottom: $s-100;
   }
 
