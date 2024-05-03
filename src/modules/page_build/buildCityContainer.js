@@ -14,7 +14,7 @@ const buildCityContainer = async () => {
   if (isUserUnit("C")) {
     temperature = `${city.temperatureC} °C`;
   } else {
-    temperature = `${city.temperatureC} °F`;
+    temperature = `${city.temperatureF} °F`;
   }
 
   const divCity = createDomElement("div");
