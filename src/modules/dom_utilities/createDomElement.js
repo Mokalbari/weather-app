@@ -1,6 +1,6 @@
 const createDomElement = (element, attribute, name) => {
   const tag = document.createElement(element);
-  if (attribute) {
+  if (attribute && name) {
     tag.setAttribute(attribute, name);
   }
   return tag;
