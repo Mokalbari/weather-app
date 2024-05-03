@@ -1,4 +1,5 @@
 import "./index.scss";
+import getCityInfo from "./modules/getCityInfo";
 import getHourlyInfo from "./modules/getHourlyInfo";
 
 // Stocker la donnée validée sous formulaire
@@ -11,6 +12,7 @@ import getHourlyInfo from "./modules/getHourlyInfo";
 
 // (async () => {
 //   const toulouse = await getHourlyInfo("Toulouse");
-//   console.log(`At 12h the temperature will be ${toulouse.weatherTemp12}`);
-//   console.log(`At 12h the weather will be ${toulouse.weatherState12}`);
+//   const toulouseBis = await getCityInfo("Bordeaux");
+//   console.log(toulouseBis.city);
+//   console.log(toulouse.weatherTemp14);
 // })();
