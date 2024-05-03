@@ -1,4 +1,7 @@
 import "./index.scss";
+import buildCityContainer from "./modules/page_build/buildCityContainer";
+
+// import buildCityContainer from "./modules/page_build/buildCityContainer";
 
 // Stocker la donnée validée sous formulaire
 // Utiliser la donnée stockée pour fetch météo ville
@@ -14,3 +17,7 @@ import "./index.scss";
 //   console.log(toulouseBis.city);
 //   console.log(toulouse.weatherTemp14);
 // })();
+
+document.addEventListener("DOMContentLoaded", () => {
+  buildCityContainer();
+});
