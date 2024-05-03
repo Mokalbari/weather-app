@@ -1,3 +1,3 @@
-const config = { defaultCity: "Toulouse" };
+const config = { citySelection: "Toulouse" };
 
 export default config;

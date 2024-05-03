@@ -4,7 +4,7 @@ import config from "../config";
 // One part is retrieving the data from the API
 // The over part is turning it into JSON file.
 
-const fetchData = async (city = config.defaultCity) => {
+const fetchData = async (city = config.citySelection) => {
   const weatherData = await fetch(
     `https://api.weatherapi.com/v1//forecast.json?key=0c353eabd4564185b10160058242504&q=${city}`
   );
@@ -18,9 +18,9 @@ const fetchData = async (city = config.defaultCity) => {
 };
 
 const getWeatherFromAPI = async () => {
-  const data = fetchData();
+  const data = await fetchData();
   const weather = await data.json();
-  return { weather };
+  return weather;
 };
 
 export default getWeatherFromAPI;
