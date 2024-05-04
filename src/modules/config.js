@@ -1,3 +1,3 @@
-const config = { citySelection: "Toulouse", units: "C", theme: "light" };
+const config = { citySelection: "London", units: "F", theme: "light" };
 
 export default config;
