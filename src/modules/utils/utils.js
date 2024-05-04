@@ -10,3 +10,5 @@ export const convertTemperatureUnit = city => {
   }
   return temperature;
 };
+
+export const isDay = city => city === true;

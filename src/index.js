@@ -3,7 +3,7 @@ import buildCityContainer from "./modules/page_build/buildCityContainer";
 import getCityInfo from "./modules/api_data/getCityInfo";
 import { convertTemperatureUnit } from "./modules/utils/utils";
 import getWeatherIcon from "./modules/api_data/getWeatherIcon";
-
+import { buildIllustrationContainer } from "./modules/page_build/buildIllustrationHTML";
 // import buildCityContainer from "./modules/page_build/buildCityContainer";
 
 // Stocker la donnée validée sous formulaire
@@ -26,4 +26,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   const temperature = convertTemperatureUnit(city);
   const weatherIcon = await getWeatherIcon();
   buildCityContainer(city, temperature, weatherIcon);
+  buildIllustrationContainer();
 });
