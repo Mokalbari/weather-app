@@ -12,3 +12,6 @@ export const convertTemperatureUnit = city => {
 };
 
 export const isDay = city => city === true;
+
+export const matchesWeatherCondition = (weatherState, conditions) =>
+  conditions.some(condition => weatherState.includes(condition));

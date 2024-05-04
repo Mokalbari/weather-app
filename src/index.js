@@ -4,6 +4,7 @@ import getCityInfo from "./modules/api_data/getCityInfo";
 import { convertTemperatureUnit } from "./modules/utils/utils";
 import getWeatherIcon from "./modules/api_data/getWeatherIcon";
 import { buildIllustrationContainer } from "./modules/page_build/buildIllustrationHTML";
+import selectImgOnWeatherCondition from "./modules/dom_utilities/selectImgOnWeatherCondition";
 // import buildCityContainer from "./modules/page_build/buildCityContainer";
 
 // Stocker la donnée validée sous formulaire
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const city = await getCityInfo();
   const temperature = convertTemperatureUnit(city);
   const weatherIcon = await getWeatherIcon();
+  const imgSrc = await selectImgOnWeatherCondition(city);
   buildCityContainer(city, temperature, weatherIcon);
-  buildIllustrationContainer();
+  buildIllustrationContainer(imgSrc);
 });

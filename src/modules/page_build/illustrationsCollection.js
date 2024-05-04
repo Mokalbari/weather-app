@@ -8,31 +8,31 @@ import stormIMG from "../../img/storm.png";
 
 const illustrationsCollection = {
   sunny: {
-    link: sunnyIMG,
+    ref: sunnyIMG,
     description: "A cat playing in the sun"
   },
   rain: {
-    link: rainIMG,
+    ref: rainIMG,
     description: "A cat watching the rain"
   },
   storm: {
-    link: stormIMG,
+    ref: stormIMG,
     description: "A cat watching the storm"
   },
   cloudy: {
-    link: cloudyIMG,
+    ref: cloudyIMG,
     description: "A cat playing in the clouds"
   },
   default: {
-    link: defaultIMG,
+    ref: defaultIMG,
     description: "A cat playing in a japanese house"
   },
   night: {
-    link: nightIMG,
+    ref: nightIMG,
     description: "A cat sleeping under the stars"
   },
   nightrain: {
-    link: nightRainIMG,
+    ref: nightRainIMG,
     description: "A cat watching the rain at night"
   }
 };
