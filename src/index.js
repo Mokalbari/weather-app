@@ -1,5 +1,8 @@
 import "./index.scss";
 import buildCityContainer from "./modules/page_build/buildCityContainer";
+import getCityInfo from "./modules/api_data/getCityInfo";
+import { convertTemperatureUnit } from "./modules/utils/utils";
+import getWeatherIcon from "./modules/api_data/getWeatherIcon";
 
 // import buildCityContainer from "./modules/page_build/buildCityContainer";
 
@@ -18,6 +21,9 @@ import buildCityContainer from "./modules/page_build/buildCityContainer";
 //   console.log(toulouse.weatherTemp14);
 // })();
 
-document.addEventListener("DOMContentLoaded", () => {
-  buildCityContainer();
+document.addEventListener("DOMContentLoaded", async () => {
+  const city = await getCityInfo();
+  const temperature = convertTemperatureUnit(city);
+  const weatherIcon = await getWeatherIcon();
+  buildCityContainer(city, temperature, weatherIcon);
 });
